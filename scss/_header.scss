@@ -1,0 +1,13 @@
+header {
+    position: fixed;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__body {
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+}
