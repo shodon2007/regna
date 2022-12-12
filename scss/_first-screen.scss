@@ -1,10 +1,48 @@
-body {
+.first-screen {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.first-screen__img {
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
     background: url(../img/hero-bg.jpg) center center / cover no-repeat fixed;
 }
 
-.first-screen {
+
+.first-screen__main {
     display: flex;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.5);
+    flex-direction: column;
+    gap: 50px;
+    text-align: center;
+    color: white;
+}
+
+.first-screen__title {
+    font-size: 48px;
+}
+
+.first-screen__subtitle {
+    font-size: 24px;
+}
+
+.first-screen__link a {
+    transition: all 0.5s ease;
+    color: white;
+    padding: 8px 28px;
+    border-radius: 50px;
+    border: 3px solid white;
+    text-decoration: none;
+
+    &:hover {
+        background-color: #2dc997;
+        border: 3px solid #2dc997;
+    }
 }
