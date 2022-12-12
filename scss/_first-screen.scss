@@ -1,6 +1,10 @@
+body {
+    background: url(../img/hero-bg.jpg) center center / cover no-repeat fixed;
+}
+
 .first-screen {
     display: flex;
     width: 100vw;
     height: 100vh;
-    background: url(../img/hero-bg.jpg) center center / cover no-repeat fixed;
+    background-color: rgba(0, 0, 0, 0.5);
 }
