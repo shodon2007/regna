@@ -202,3 +202,14 @@ header.scroll {
 .burger__bottom a:hover {
   color: #2dc997;
 }
+
+.about__body {
+  width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.about__right img {
+  max-width: 100%;
+}
