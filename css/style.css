@@ -210,6 +210,12 @@ header.scroll {
   grid-template-columns: repeat(2, 1fr);
 }
 
+.about__left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .about__right img {
   max-width: 100%;
 }
