@@ -221,6 +221,8 @@ header.scroll {
 }
 
 .about__subtitle {
+  line-height: 26px;
+  font-weight: 200;
   margin-bottom: 30px;
   color: #666666;
 }
@@ -271,6 +273,8 @@ header.scroll {
 }
 
 .propertie__subtitle {
+  line-height: 20px;
+  font-weight: 200;
   margin-left: 70px;
   font-size: 14px;
   color: #666666;
