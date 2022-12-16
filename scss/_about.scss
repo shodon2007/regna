@@ -74,3 +74,12 @@
     font-size: 14px;
     color: #666666;
 }
+
+@media (max-width: 1200px) {
+    .about__body {
+        grid-template-columns: 1fr;
+        width: 100vw;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
