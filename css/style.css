@@ -296,12 +296,50 @@ header.scroll {
 }
 
 .facts__title {
+  text-transform: uppercase;
   color: #111111;
   font-size: 30px;
+  margin-bottom: 5px;
+}
+
+.facts__subtitle {
+  font-family: "Open Sans";
+  font-size: 15px;
+  color: #999999;
+  margin-bottom: 50px;
+}
+
+.facts__number {
+  font-family: "Open Sans";
+  font-size: 48px;
+  color: #2dc997;
+}
+
+.facts__about {
+  font-size: 14px;
+  color: #666666;
 }
 
 .facts__properties {
   margin-top: 50px;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 1200px) {
+  .facts__body {
+    width: 100%;
+    padding: 50px 10px;
+  }
+}
+@media (max-width: 900px) {
+  .facts__properties {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 500px) {
+  .facts__properties {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 50px;
+  }
 }
