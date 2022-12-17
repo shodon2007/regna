@@ -289,6 +289,11 @@ header.scroll {
     padding-right: 10px;
   }
 }
+@media (max-width: 800px) {
+  .about__properties {
+    gap: 30px;
+  }
+}
 .facts {
   display: flex;
   justify-content: center;
@@ -473,6 +478,10 @@ header.scroll {
   background: url(../img/call-to-action-bg.jpg) center center/cover no-repeat fixed;
 }
 
+.action__bg {
+  background: rgba(0, 0, 0, 0.5);
+}
+
 .action__body {
   padding: 80px 0;
   width: 1200px;
@@ -493,6 +502,7 @@ header.scroll {
 }
 
 .action__subtitle {
+  line-height: 24px;
   color: white;
 }
 
@@ -507,4 +517,19 @@ header.scroll {
 .action__right a:hover {
   background-color: #2dc997;
   border: 3px solid #2dc997;
+}
+
+@media (max-width: 1200px) {
+  .action__body {
+    width: 100%;
+    padding: 80px 10px;
+  }
+}
+@media (max-width: 900px) {
+  .action__body {
+    padding: 80px 20px;
+    text-align: center;
+    flex-direction: column;
+    gap: 40px;
+  }
 }
