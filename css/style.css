@@ -18,6 +18,7 @@
   src: url(../fonts/icons.woff);
 }
 header {
+  z-index: 10;
   transition: all 0.5s ease;
   padding: 30px 0;
   position: fixed;
@@ -467,4 +468,43 @@ header.scroll {
   .services__bottom {
     grid-template-columns: 1fr;
   }
+}
+.action {
+  background: url(../img/call-to-action-bg.jpg) center center/cover no-repeat fixed;
+}
+
+.action__body {
+  padding: 80px 0;
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.action__right {
+  flex: 1 0 auto;
+}
+
+.action__title {
+  font-size: 28px;
+  color: white;
+}
+
+.action__subtitle {
+  color: white;
+}
+
+.action__right a {
+  transition: all 0.5s ease;
+  color: white;
+  padding: 8px 28px;
+  border-radius: 50px;
+  border: 3px solid white;
+  text-decoration: none;
+}
+.action__right a:hover {
+  background-color: #2dc997;
+  border: 3px solid #2dc997;
 }
