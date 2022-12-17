@@ -114,3 +114,23 @@
         content: "\f217";
     }
 }
+
+
+@media (max-width: 1200px) {
+    .services__body {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 900px) {
+    .services__bottom {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .services__bottom {
+        grid-template-columns: 1fr;
+    }
+}
