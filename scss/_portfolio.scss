@@ -29,6 +29,7 @@
 }
 
 .portfolio__el {
+    cursor: pointer;
     padding: 10px 15px;
     border-radius: 5px;
     color: #666666;
@@ -44,4 +45,25 @@
 .portfolio__el.active {
     color: white;
     background-color: #2dc997;
+}
+
+.portfolio__works {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.works__work {
+    animation: workShow ease 1s;
+    height: 300px;
+}
+
+@keyframes workShow {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
