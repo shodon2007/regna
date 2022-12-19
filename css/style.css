@@ -533,6 +533,12 @@ header.scroll {
     gap: 40px;
   }
 }
+@media (max-width: 230px) {
+  .action__right a {
+    font-size: 10px;
+    padding: 4px 14px;
+  }
+}
 .portfolio {
   background-color: #f7f7f7;
 }
@@ -557,6 +563,7 @@ header.scroll {
 }
 
 .portfolio__nav {
+  flex-wrap: wrap;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -598,7 +605,6 @@ header.scroll {
 }
 .works__work:hover {
   transform: translate(0, -30px);
-  z-index: 10;
 }
 .works__work:hover .work__body {
   opacity: 1;
@@ -631,9 +637,42 @@ header.scroll {
 
 @keyframes workShow {
   0% {
+    transform: scale(0.5);
     opacity: 0;
+  }
+  10% {
+    transform: scale(1);
   }
   100% {
     opacity: 1;
+  }
+}
+@media (max-width: 1200px) {
+  .portfolio__body {
+    width: 100%;
+    padding: 80px 10px;
+  }
+}
+@media (max-width: 800px) {
+  .portfolio__works {
+    padding: 30px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 500px) {
+  .portfolio__works {
+    padding: 10px;
+    padding-top: 30px;
+  }
+  .works__work {
+    height: 200px;
+  }
+}
+@media (max-width: 320px) {
+  .portfolio__title {
+    font-size: 24px;
+  }
+  .portfolio__works {
+    grid-template-columns: repeat(1, 1fr);
   }
 }

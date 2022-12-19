@@ -60,3 +60,10 @@
         gap: 40px;
     }
 }
+
+@media (max-width: 230px) {
+    .action__right a {
+        font-size: 10px;
+        padding: 4px 14px;
+    }
+}
