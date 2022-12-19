@@ -39,11 +39,16 @@ const resetStyles = () => {
     })
 }
 
-const render = (who) => {
+const render = (who, type) => {
     document.querySelector('.portfolio__works').innerHTML = '';
     who.forEach((el) => {
+        el.name = el.itemName.slice(0, el.itemName.indexOf(' '));
         document.querySelector('.portfolio__works').innerHTML += `
             <div class="works__work" style="background: url(${el.bg}) center center / cover no-repeat">
+                <div class="work__body">
+                    <div class="work__title">${el.itemName}</div>
+                    <div class="work__subtitle">${el.name}</div>
+                </div>
             </div>
             `;
     })
