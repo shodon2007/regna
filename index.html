@@ -15,12 +15,12 @@
             <div class="burger__exit" onclick="burgerClick(true)"></div>
         </div>
         <div class="burger__bottom">
-            <a href="#" class="burger__link">home</a>
-            <a href="#" class="burger__link">about</a>
-            <a href="#" class="burger__link">services</a>
-            <a href="#" class="burger__link">portfolio</a>
-            <a href="#" class="burger__link">team</a>
-            <a href="#" class="burger__link">contact</a>
+            <a href="#home" class="link__home">home</a>
+            <a href="#about" class="link__about">about</a>
+            <a href="#services" class="link__services">services</a>
+            <a href="#portfolio" class="link__portfolio">portfolio</a>
+            <a href="#team" class="link__team">team</a>
+            <a href="#contact" class="link__contact">contact</a>
         </div>
     </div>
     <header>
@@ -30,17 +30,17 @@
             </div>
             <div class="header__burger" onclick="burgerClick(false)"></div>
             <nav class="header__nav">
-                <a href="#" class="header__link">home</a>
-                <a href="#" class="header__link">about</a>
-                <a href="#" class="header__link">services</a>
-                <a href="#" class="header__link">portfolio</a>
-                <a href="#" class="header__link">team</a>
-                <a href="#" class="header__link">contact</a>
+                <a href="#home" class="link__home">home</a>
+                <a href="#about" class="link__about">about</a>
+                <a href="#services" class="link__services">services</a>
+                <a href="#portfolio" class="link__portfolio">portfolio</a>
+                <a href="#team" class="link__team">team</a>
+                <a href="#contact" class="link__contact">contact</a>
             </nav>
         </div>
     </header>
 
-    <div class="first-screen">
+    <div class="first-screen" id="home">
         <div class="first-screen__img">
         </div>
 
@@ -58,7 +58,7 @@
     </div>
 
 
-    <div class="about">
+    <div class="about" id="about">
         <div class="about__body">
             <div class="about__left">
                 <h2 class="about__title">
@@ -129,7 +129,7 @@
     </div>
 
 
-    <div class="services">
+    <div class="services" id="services">
         <div class="services__body">
             <div class="services__top">
                 <h2 class="services__title">SERVICES</h2>
@@ -196,7 +196,7 @@
     </div>
 
 
-    <div class="portfolio">
+    <div class="portfolio" id="portfolio">
         <div class="portfolio__body">
             <h3 class="portfolio__title">PORTFOLIO</h3>
             <div class="portfolio__subtitle">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
@@ -215,7 +215,7 @@
         <script src="js/portfolio.js"></script>
     </div>
 
-    <div class="team">
+    <div class="team" id="team">
         <div class="team__body">
             <div class="team__title">TEAM</div>
             <div class="team__subtitle">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
@@ -278,7 +278,7 @@
         </div>
     </div>
 
-    <div class="contact">
+    <div class="contact" id="contact">
         <div class="contact__body">
             <div class="contact__title">CONTACT</div>
             <div class="contact__subtitle">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
@@ -311,6 +311,7 @@
         © Copyright Regna. All Rights Reserved
     </footer>
     <script src="js/script.js"></script>
+    <script src="js/headerLinks.js"></script>
 </body>
 
 </html>
