@@ -804,7 +804,7 @@ header.scroll {
 }
 
 .contact__body {
-  padding-top: 50px;
+  padding-top: 50px !important;
   width: 1200px;
   margin: 0 auto;
   text-align: center;
@@ -828,6 +828,7 @@ header.scroll {
 }
 
 .contact__form {
+  justify-content: center;
   display: flex;
   flex-direction: column;
   width: 400px;
@@ -898,4 +899,26 @@ textarea:focus {
   color: white;
   background-color: #333333;
   font-family: icons;
+}
+
+@media (max-width: 1200px) {
+  .contact__body {
+    width: 100%;
+    padding: 0 10px;
+  }
+}
+@media (max-width: 700px) {
+  .contact__bottom {
+    text-align: center;
+    flex-direction: column;
+  }
+  .contact__bottom * {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  .contact__form {
+    width: 100%;
+    margin: 0 auto;
+  }
 }
