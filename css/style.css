@@ -680,6 +680,7 @@ header.scroll {
 }
 
 .team__body {
+  padding: 50px 0;
   width: 1200px;
   margin: 0 auto;
   text-align: center;
