@@ -10,15 +10,29 @@
 }
 
 .portfolio__title {
+    transition: all 1s ease;
+    position: relative;
+    top: 100px;
+    opacity: 0;
     font-size: 32px;
     margin-bottom: 5px;
 }
 
 .portfolio__subtitle {
+    position: relative;
+    transition: all 1s ease;
+    top: 100px;
+    opacity: 0;
     font-size: 15px;
     color: #999999;
     line-height: 24px;
     margin-bottom: 50px;
+}
+
+.portfolio__subtitle.active,
+.portfolio__title.active {
+    opacity: 1;
+    top: 0;
 }
 
 .portfolio__nav {
@@ -56,7 +70,7 @@
 }
 
 .works__work {
-    transition: all 0.5s ease;
+    transition: all 1s ease;
     position: relative;
     display: flex;
     align-items: flex-end;
