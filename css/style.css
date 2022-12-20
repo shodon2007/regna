@@ -282,16 +282,15 @@ header.scroll {
 }
 
 @media (max-width: 1200px) {
+  .about__properties {
+    gap: 30px;
+  }
   .about__body {
+    gap: 50px;
     grid-template-columns: 1fr;
     width: 100vw;
     padding-left: 10px;
     padding-right: 10px;
-  }
-}
-@media (max-width: 800px) {
-  .about__properties {
-    gap: 30px;
   }
 }
 .facts {
@@ -676,8 +675,126 @@ header.scroll {
     grid-template-columns: repeat(1, 1fr);
   }
 }
+.team {
+  background-color: #fff;
+}
+
 .team__body {
   width: 1200px;
   margin: 0 auto;
   text-align: center;
+}
+
+.team__title {
+  font-size: 32px;
+  margin-bottom: 5px;
+}
+
+.team__subtitle {
+  font-size: 15px;
+  color: #999999;
+  line-height: 24px;
+  margin-bottom: 50px;
+}
+
+.team__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.team__man {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.team__man img {
+  width: 100%;
+}
+
+.team__name {
+  color: #666666;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.team__info {
+  background: #fff;
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.team__work {
+  color: #666666;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.team__social {
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  font-size: 18px;
+}
+
+.team__social > span {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #666666;
+  font-family: icons;
+}
+.team__social > span:hover {
+  color: #2dc997;
+}
+
+.twitter:before {
+  content: "\f5ef";
+}
+
+.facebook:before {
+  content: "\f344";
+}
+
+.instagramm:before {
+  content: "\f437";
+}
+
+.linkedin:before {
+  content: "\f472";
+}
+
+@media (max-width: 1200px) {
+  .team__body {
+    width: 100%;
+    padding: 50px 10px;
+  }
+}
+@media (max-width: 1000px) {
+  .team__body {
+    width: 700px;
+  }
+  .team__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 700px) {
+  .team__body {
+    width: 400px;
+  }
+  .team__list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (max-width: 400px) {
+  .team__body {
+    width: 100%;
+  }
+  .team__info {
+    position: static;
+  }
 }
