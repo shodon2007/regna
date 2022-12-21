@@ -1012,7 +1012,7 @@ header.scroll {
 }
 
 .contact__form input,
-textarea {
+.contact__form textarea {
   transition: all 0.3s ease;
   padding: 8px 15px;
   color: #212529;
@@ -1020,11 +1020,18 @@ textarea {
   outline: 1px solid #ced4da;
 }
 .contact__form input:focus,
-textarea:focus {
+.contact__form textarea:focus {
   outline: 1px solid #0055ff;
 }
 
+.contact__form textarea {
+  min-height: 50px;
+  height: 100px;
+  resize: vertical;
+}
+
 .contact__form button {
+  transition: all 0.5s ease;
   margin: 0 auto;
   width: max-content;
   word-wrap: normal;
@@ -1033,6 +1040,14 @@ textarea:focus {
   background-color: #2dc997;
   color: white;
   font-size: 15px;
+  border: 3px solid transparent;
+  cursor: pointer;
+}
+.contact__form button:hover {
+  border-radius: 20px;
+  background-color: white;
+  color: #2dc997;
+  border: 3px solid #2dc997;
 }
 
 .contact__contacts {
@@ -1069,12 +1084,17 @@ textarea:focus {
   gap: 5px;
 }
 .contact__contacts .contact__links div {
+  cursor: pointer;
+  transition: all 0.5s ease;
   font-size: 20px;
   padding: 9px;
   border-radius: 50%;
   color: white;
   background-color: #333333;
   font-family: icons;
+}
+.contact__contacts .contact__links div:hover {
+  background-color: #2dc997;
 }
 
 @media (max-width: 1200px) {
