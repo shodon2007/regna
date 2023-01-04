@@ -611,6 +611,7 @@ header.scroll {
 }
 
 .services__block {
+  cursor: pointer;
   opacity: 0;
   top: 100px;
   position: relative;
@@ -934,6 +935,7 @@ header.scroll {
 }
 
 .works__work {
+  cursor: pointer;
   -webkit-transition: all 1s ease;
   -o-transition: all 1s ease;
   transition: all 1s ease;
@@ -1065,7 +1067,7 @@ header.scroll {
 }
 
 .team__body {
-  padding: 50px 0;
+  padding: 70px 0;
   width: 1200px;
   margin: 0 auto;
   text-align: center;
@@ -1237,8 +1239,8 @@ header.scroll {
 }
 
 .contact__body {
-  padding-top: 50px !important;
-  padding-bottom: 50px !important;
+  padding-top: 70px !important;
+  padding-bottom: 70px !important;
   width: 1200px;
   margin: 0 auto;
   text-align: center;
