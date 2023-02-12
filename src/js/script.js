@@ -4,7 +4,7 @@ const header = document.querySelector('header');
 
 
 
-function burgerClick(boolean) {
+window.burgerClick = (boolean) => {
     if (boolean == true) {
         burger.style.display = 'none';
     } else {

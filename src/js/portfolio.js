@@ -16,7 +16,7 @@ const web = [
     { itemName: 'Web 3', bg: 'img/portfolio/portfolio-9.jpg' },
 ];
 
-const portfolioClick = (type) => {
+window.portfolioClick = (type) => {
     if (type == 'card') {
         render(card);
     } else if (type == 'web') {
